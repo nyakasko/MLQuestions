@@ -78,6 +78,14 @@ A technique that discourages learning a more complex or flexible model, so as to
 Examples
  - Ridge (L2 norm)
  - Lasso (L1 norm)  
+
+ℓ1 – achieve sparse representation  ℓ2 – avoid large weights
+
+Weight decay This means that in order to prevent overfitting, we shouldn’t allow our models to get too complex.
+
+In L2 norm, an extra term often referred to as regularization term is added to the cost function of the network.
+
+
 The obvious *disadvantage* of **ridge** regression, is model interpretability. It will shrink the coefficients for least important predictors, very close to zero. But it will never make them exactly zero. In other words, the *final model will include all predictors*. However, in the case of the **lasso**, the L1 penalty has the effect of forcing some of the coefficient estimates to be *exactly equal* to zero when the tuning parameter λ is sufficiently large. Therefore, the lasso method also performs variable selection and is said to yield sparse models.
 [[src]](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
 
