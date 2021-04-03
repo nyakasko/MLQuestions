@@ -25,6 +25,18 @@ Reduce variance: more training data, add regularization, reduce the number of fe
 #### 2) What is gradient descent? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
 
+Gradient is the vector of partial derivatives. It points in the direction of the greatest rate of increase of the function whose derivative we took. 
+
+Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function. The idea is to take repeated steps (with step size / learning rate) in the opposite direction of the gradient (or approximate gradient) of the function at the current point, because this is the direction of steepest descent. 
+
+Backpropagation: algorithm to compute gradient g(θ) for a multilayer neural network with the help of the chain rule.
+
+Gradient Descent may get stuck in a local minima or saddle point. Solution: Introduce some randomness: Stochastic Gradient Descent. Evaluate the model for a single sample, not the whole dataset. Problem: It has to be calculated step-by-step (sequentially), while GD can be parallelized (summation).
+
+Instead use a small set of samples, a mini-batch, it is still stochastic and can be parallelized too: Evaluate the model for a batch of 𝑩 samples.
+
+
+
 #### 3) Explain over- and under-fitting and how to combat them? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/overfitting-vs-underfitting-a-complete-example-d05dd7e19765)
 
