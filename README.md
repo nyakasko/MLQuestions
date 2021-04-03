@@ -40,6 +40,31 @@ Instead use a small set of samples, a mini-batch, it is still stochastic and can
 #### 3) Explain over- and under-fitting and how to combat them? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/overfitting-vs-underfitting-a-complete-example-d05dd7e19765)
 
+Overfitting: Overfitting refers to a model that models the training data too well. Overfitting is likely to happen when a model contains more parameters than can be justified by the data. Overfitting happens when a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.
+
+Wikipedia: An overfitted model is a statistical model that contains more parameters than can be justified by the data.
+
+Good performance on training data, bad on test data. low bias, but high variance
+
+Underfitting: Underfitting refers to a model that can neither model the training data nor generalize to new data. An underfit machine learning model is not a suitable model and will be obvious as it will have poor performance on the training data.
+
+Bad performance on training data and test data. high bias, but low variance
+
+How to combat them? 
+
+Rule of thumb (one in ten rule) for logistic regression: To keep the risk of overfitting low, the number of examples should be ten times larger than the number of parameters.
+
+#### Regularization is a technique used to solve the overfitting problem.
+
+Limit model capacity: Reduce network size, Weight decay, Parameter sharing
+
+Early stopping
+
+Ensemble methods: Dropout, Probabilistic treatment
+
+Increase amount of data: Data augmentation, Injecting noise, Adversial training
+
+
 #### 4) How do you combat the curse of dimensionality? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 
  - Manual Feature Selection
