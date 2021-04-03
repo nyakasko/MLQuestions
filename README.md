@@ -18,6 +18,10 @@ Overfitting: low bias, but high variance
 
 Underfitting: high bias, but low variance
 
+Reduce bias: increase model size, add new features, reduce regularization, find better architectures
+
+Reduce variance: more training data, add regularization, reduce the number of features, decrease model size
+
 #### 2) What is gradient descent? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
 
