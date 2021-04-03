@@ -5,6 +5,12 @@ A collection of technical interview questions for machine learning and computer 
 
 If our model is too simple and has very few parameters then it may have high bias and low variance. On the other hand if our model has large number of parameters then it’s going to have high variance and low bias. So we need to find the right/good balance without overfitting and underfitting the data. [[src]](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)
 Tradeoff: If we reduce the bias[variance], the variance[bias] will increase. 
+Bias ≅ training error  
+high ➔ strong preconception about the data (unable to represent the dataset)
+Variance ≅ test error – training error
+high ➔ fails to generalize to new data (too many parameters, so it can memorize the data) 
+Overfitting: low bias, but high variance
+Underfitting: high bias, but low variance
 
 #### 2) What is gradient descent? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
