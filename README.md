@@ -129,6 +129,7 @@ ReLU also avoid the vanishing gradient problem, thats the Sigmoid has. It is les
 
 Binary search between [0, x] 
 
+```c
 #include <stdio.h>
 int main()
 {
@@ -149,7 +150,7 @@ int main()
 	printf("%f", L + (R-L)/2);
 	return L + (R-L)/2;
 }
-
+```
 #### 18) Reverse a bitstring. [[src](https://www.reddit.com/r/computervision/comments/7gku4z/technical_interview_questions_in_cv/)]
 
 #### 19) Implement non maximal suppression as efficiently as you can. [[src](https://www.reddit.com/r/computervision/comments/7gku4z/technical_interview_questions_in_cv/)]
