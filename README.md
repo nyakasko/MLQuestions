@@ -22,6 +22,12 @@ Reduce bias: increase model size, add new features, reduce regularization, find 
 
 Reduce variance: more training data, add regularization, reduce the number of features, decrease model size
 
+High bias is underfitting and high variance is overfitting. Ideally, we need to find a golden mean between these two.
+
+The training error will tend to decrease as we increase the degree d of the polynomial.
+
+At the same time, the cross validation error will tend to decrease as we increase d up to a point, and then it will increase as d is increased, forming a convex curve.
+
 #### 2) What is gradient descent? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/gradient-descent-in-a-nutshell-eaf8c18212f0)
 
