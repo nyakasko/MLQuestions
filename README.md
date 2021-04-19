@@ -79,15 +79,25 @@ Examples
  - Ridge (L2 norm)
  - Lasso (L1 norm)  
 
+
 ℓ1 – achieve sparse representation  ℓ2 – avoid large weights
 
 Weight decay This means that in order to prevent overfitting, we shouldn’t allow our models to get too complex.
 
 In L2 norm, an extra term often referred to as regularization term is added to the cost function of the network.
 
+A regression model that uses L1 regularization technique is called Lasso Regression and model which uses L2 is called Ridge Regression.
 
 The obvious *disadvantage* of **ridge** regression, is model interpretability. It will shrink the coefficients for least important predictors, very close to zero. But it will never make them exactly zero. In other words, the *final model will include all predictors*. However, in the case of the **lasso**, the L1 penalty has the effect of forcing some of the coefficient estimates to be *exactly equal* to zero when the tuning parameter λ is sufficiently large. Therefore, the lasso method also performs variable selection and is said to yield sparse models.
 [[src]](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
+
+In other words, L1 regularization is good for keeping a low model complexity and L2 regularization is good for keeping the weights of the model low.
+
+By intuition: 
+
+The L1 norm that is calculated as the sum of the absolute values of the vector.
+
+The L2 norm that is calculated as the square root of the sum of the squared vector values.
 
 #### 6) Explain Principal Component Analysis (PCA)? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 [[Answer]](https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c)
